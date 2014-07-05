@@ -49,9 +49,9 @@ int main(int argc, char *argv[])
     for (i = 1; i < MAX_SIZE; ++i)
         p10mp[i] = (10 * p10mp[i-1]) % p;
 
-    mpz_t lhs;
-    mpz_init_set_str(lhs, "3141592653589793238462643383279502884", 10);
-    gmp_printf("%Zd\n", lhs);
+    //mpz_t lhs;
+    //mpz_init_set_str(lhs, "3141592653589793238462643383279502884", 10);
+    //gmp_printf("%Zd\n", lhs);
 
     FILE *fp = fopen("grid.txt", "r");
     if (!fp) perror("Memory allocation failed"), exit(1);
